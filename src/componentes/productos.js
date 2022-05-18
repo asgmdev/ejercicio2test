@@ -21,7 +21,7 @@ export default class productos extends Component {
 
    async componentDidMount(){
     const productosAux = await axios.get('https://sistemas.forus.cl/forus/challenge/dummy-api/producto/')
-    //console.log(productosAux.data)
+    console.log(productosAux.data)
     this.setState({productos: productosAux.data})
     //console.log("estado: "+this.state.productos)
   }
